@@ -315,3 +315,6 @@ If you have `pytest` installed, `pytest tests/` works too.
   exposed by the AST or evaluator yet.
 - New scenarios should receive two explicit paraphrases before being
   used in a robustness run.
+
+## AI Usage
+- AI was employed in this codebase for coding assitance, annotiation of the code as well as the creation of this README file.
