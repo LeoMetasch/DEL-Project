@@ -1,0 +1,30 @@
+[project]
+name = "del-bench"
+version = "0.1.0"
+description = "Pilot benchmark for LLM higher-order belief tracking, grounded in Baltag-Smets DEL."
+requires-python = ">=3.10"
+dependencies = [
+    "httpx>=0.27",
+    "matplotlib>=3.8",
+    "numpy>=1.26",
+    "pandas>=2.2",
+    "seaborn>=0.13",
+]
+
+[project.scripts]
+del-bench = "del_bench.cli:main"
+
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools.packages.find]
+include = ["del_bench*"]
+
+[tool.black]
+target-version = ["py310"]
+
+[dependency-groups]
+dev = [
+    "black>=26.5.1",
+]
